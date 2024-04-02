@@ -1,0 +1,46 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Grade Calculator</title> 
+<script>  
+  
+// Function: Calculates the average grade of the four units Linet223190709
+function calculateAverageGrade() {  
+    // Ask the user if they need help  
+    const needHelp = prompt("Need help with your calculations？");  
+    if (needHelp.toLowerCase() !== "yes") {  
+        console.log("The user does not need help. The program is over.");  
+        return;  
+    }  
+  
+    // Ask the user for a full name
+    const fullName = prompt("Please enter your full name：");  
+    console.log(`welcome，${fullName}！`);  
+  
+    // The user is asked to enter a score for each of the four units 
+    const unit1Score = parseFloat(prompt("Please enter your score for Unit 1："));  
+    const unit2Score = parseFloat(prompt("Please enter your score for Unit 2："));  
+    const unit3Score = parseFloat(prompt("Please enter your score for Unit 3："));  
+    const unit4Score = parseFloat(prompt("Please enter your score for Unit 4："));  
+  
+    // Calculate total score  
+    const totalScore = unit1Score + unit2Score + unit3Score + unit4Score;  
+  
+    // averaging  
+    const averageGrade = totalScore / 4;  
+  
+    // Output results to the console  
+    console.log(`total: ${totalScore}`);  
+    console.log(`Average score: ${averageGrade}`);  
+  
+    // Thank users  
+    console.log(`Thank you.，${fullName}，Because of using this program.`);  
+}  
+  
+// Call the function to start the calculation 
+calculateAverageGrade();
+</script>  
+</head>  
+</html>
